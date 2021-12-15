@@ -1,0 +1,30 @@
+<div class="col-md-4 mx-auto">
+    <div class="card text-center">
+        <div class="card-header">
+            <h3>EDITAR SALA DE ZOOM</h3>
+        </div>
+        <div class="car-body">
+            <form action="/salaszooms/edit/{{salaszoom._id}}?_method=PUT" method="POST">
+               <input type="hidden" name="_method" value="PUT">
+               <div class="form-group">
+                    <input type="text" name="sigla" class="form-control" value="{{salaszoom.sigla}}" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="iddesala" class="form-control" value="{{salaszoom.iddesala}}" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="contraseña" class="form-control" value="{{salaszoom.contraseña}}" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="linkdesala" class="form-control" value="{{salaszoom.linkdesala}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="id" class="form-control" value="{{salaszoom.id}}">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

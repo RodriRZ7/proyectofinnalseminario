@@ -1,0 +1,28 @@
+<div class="row">
+    {{#each designarhs}}
+    <!--<pre>{{this}}</pre>-->
+        <div class="cold-md-3">
+            <div class="card">
+                <div class="card body">
+                    <p class="card-title d-flex justify-content-between align-items-center">
+                        {{iddocente}} <a href="/designarhs/edit/{{_id}}"><i class="fas fa-edit"></i></a>
+                    </p>
+                    <p>{{idmateria}}</p>
+                    <p>{{idaula}}</p>
+                    <p>{{idsalazoom}}</p>
+                    <p>{{dia1}}</p>
+                    <p>{{dia2}}</p>
+                    <p>{{hora1}}</p>
+                    <p>{{hora2}}</p>
+                    <form action="/designarhs/delete/{{_id}}?_method=DELETE" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn btn-danger btn-block btn-sm">
+                            Eliminar
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>

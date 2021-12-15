@@ -1,0 +1,39 @@
+<div class="col-md-4 mx-auto">
+    <div class="card text-center">
+        <div class="card-header">
+            <h3>EDITAR DESIGNACION DE HORARIO</h3>
+        </div>
+        <div class="car-body">
+            <form action="/designarhs/edit/{{designarh._id}}?_method=PUT" method="POST">
+               <input type="hidden" name="_method" value="PUT">
+               <div class="form-group">
+                    <input type="text" name="iddocente" class="form-control" value="{{designarh.iddocente}}" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="idmateria" class="form-control" value="{{designarh.idmateria}}" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="idaula" class="form-control" value="{{designarh.idaula}}" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="idsalazoom" class="form-control" value="{{designarh.idsalazoom}}" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="dia1" class="form-control" value="{{designarh.dia1}}" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="dia2" class="form-control" value="{{designarh.dia2}}" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="hora1" class="form-control" value="{{designarh.hora1}}" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="hora2" class="form-control" value="{{designarh.hora2}}" >
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
